@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김버그의 버그 없는 HTML과 CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>KIMBUG</h1>
+    <h1>KIMBUG</h1>
+    <p style="font-family: 'Spoqa Han Sans Neo', 'sans-serif'">
+      안녕하세요. 김버그입니다.
+    </p>
+    <script>
+      const h1 = document.querySelector('h1');
+      h1.addEventListener('click', (event) => {
+        this.textContent = 'hi';
+      });
+    </script>
+  </body>
+</html>
